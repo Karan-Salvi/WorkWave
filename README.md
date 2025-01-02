@@ -106,8 +106,46 @@ WorkWave is a job portal built using the MERN stack (MongoDB, Express, React, No
 
 ### Steps to Set Up
 
-1. **Clone the repository:**
+1. Clone the repository:
 
-```bash
-git clone https://github.com/your-username/work.git
-cd work
+```
+git clone https://github.com/Karan-Salvi/WorkWave.git
+cd WorkWave  
+
+```
+
+
+2. Install Dependency :
+   
+```
+cd backend
+npm install
+
+cd frontend
+npm install
+```
+
+
+3. Create .env file in Backend Folder and copy paste it and place your environment variable values :
+   
+```
+PORT=
+FRONTEND_URI=
+MONGO_URI=                       
+SECRET_KEY=
+CLOUD_NAME=
+API_KEY=
+API_SECRET=
+```
+
+
+4. Run the code :
+   
+```
+cd frontend
+npm run dev
+
+cd backend
+npm run dev
+
+```
