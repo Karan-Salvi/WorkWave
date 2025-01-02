@@ -35,6 +35,10 @@ const registerCompany = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
+    return res.status(500).json({
+      message: "Something went wrong.",
+      success: false,
+    });
   }
 };
 const getCompany = async (req, res) => {
@@ -53,6 +57,10 @@ const getCompany = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
+    return res.status(500).json({
+      message: "Something went wrong.",
+      success: false,
+    })
   }
 };
 // get company by id
@@ -72,6 +80,10 @@ const getCompanyById = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
+    return res.status(500).json({
+      message: "Something went wrong.",
+      success: false,
+    });
   }
 };
 const updateCompany = async (req, res) => {
@@ -105,6 +117,10 @@ const updateCompany = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
+    return res.status(500).json({
+      message: "Something went wrong.",
+      success: false,
+    });
   }
 };
 

@@ -50,6 +50,10 @@ const register = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
+    return res.status(500).json({
+      message: "Internal server error.",
+      success: false,
+    });
   }
 };
 const login = async (req, res) => {
@@ -112,6 +116,10 @@ const login = async (req, res) => {
       });
   } catch (error) {
     console.log(error);
+    return res.status(500).json({
+      message: "Internal server error.",
+      success: false,
+    });
   }
 };
 const logout = async (req, res) => {
@@ -122,6 +130,10 @@ const logout = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
+    return res.status(500).json({
+      message: "Internal server error.",
+      success: false,
+    });
   }
 };
 const updateProfile = async (req, res) => {
@@ -179,6 +191,10 @@ const updateProfile = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
+    return res.status(500).json({
+      message: "Internal server error.",
+      success: false,
+    });
   }
 };
 
