@@ -59,28 +59,49 @@ const postJob = async (req, res) => {
 };
 // student k liye
 const getAllJobs = async (req, res) => {
+  // try {
+  //   const keyword = req.query.keyword || "";
+  //   const query = {
+  //     $or: [
+  //       { title: { $regex: keyword, $options: "i" } },
+  //       { description: { $regex: keyword, $options: "i" } },
+  //     ],
+  //   };
+  //   const jobs = await Job.find(query)
+  //     .populate({
+  //       path: "company",
+  //     })
+  //     .sort({ createdAt: -1 });
+  //   if (!jobs) {
+  //     return res.status(404).json({
+  //       message: "Jobs not found.",
+  //       success: false,
+  //     });
+  //   }
+  //   return res.status(200).json({
+  //     jobs,
+  //     success: true,
+  //   });
+  // } catch (error) {
+  //   console.log(error);
+  //   return res.status(500).json({
+  //     success: false,
+  //     message: "Something went wrong.",
+  //   });
+  // }
+
   try {
-    const keyword = req.query.keyword || "";
-    const query = {
-      $or: [
-        { title: { $regex: keyword, $options: "i" } },
-        { description: { $regex: keyword, $options: "i" } },
-      ],
-    };
-    const jobs = await Job.find(query)
-      .populate({
-        path: "company",
-      })
-      .sort({ createdAt: -1 });
+    const jobs = await Job.find({});
     if (!jobs) {
       return res.status(404).json({
-        message: "Jobs not found.",
+        message: "Jobs not found",
         success: false,
       });
     }
     return res.status(200).json({
-      jobs,
+      data: jobs,
       success: true,
+      message: "Jobs fetched successfully",
     });
   } catch (error) {
     console.log(error);
