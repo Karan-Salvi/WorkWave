@@ -1,11 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
       "src": "/api/v1/(.*)",
@@ -18,7 +12,7 @@
   ],
   "functions": {
     "index.js": {
-      "maxDuration": 10
+      "maxDuration": 30
     }
   }
 }
