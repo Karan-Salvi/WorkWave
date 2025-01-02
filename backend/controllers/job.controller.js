@@ -107,6 +107,7 @@ const getAllJobs = async (req, res) => {
     console.log(error);
     return res.status(500).json({
       success: false,
+      error: error,
       message: "Something went wrong. Please try again later",
     });
   }
