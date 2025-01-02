@@ -26,9 +26,12 @@ const applicationRoute = require("../routes/application.route.js");
 
 dotenv.config({});
 
-connectDB();
+
 
 const app = express();
+
+
+connectDB();
 
 // middleware
 app.use(express.json());
