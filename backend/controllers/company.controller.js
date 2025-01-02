@@ -129,4 +129,5 @@ module.exports = {
   getCompanyById,
   getCompany,
   registerCompany,
+  
 };

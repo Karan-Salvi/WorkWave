@@ -1,4 +1,4 @@
-const User = require("../models/user.model");
+const User = require("../models/user.model.js");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const getDataUri = require("../utils/datauri.js");
@@ -198,9 +198,30 @@ const updateProfile = async (req, res) => {
   }
 };
 
+const getAllUsers = async (req, res) => {
+  try {
+    const users = await User.find();
+    if (!users) {
+      return res.status(404).json({
+        message: "Users not found.",
+        success: false,
+      });
+    }
+
+    return res.status(200).json({ data: users, success: true });
+  } catch (error) {
+    console.log(error);
+    return res.status(500).json({
+      message: "Internal server error.",
+      success: false,
+    });
+  }
+};
+
 module.exports = {
   updateProfile,
   register,
   login,
   logout,
+  getAllUsers,
 };

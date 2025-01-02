@@ -9,6 +9,7 @@ const {
   logout,
   register,
   updateProfile,
+  getAllUsers,
 } = require("../controllers/user.controller");
 const isAuthenticated = require("../middlewares/isAuthenticated.js");
 const upload = require("../middlewares/mutler.js");
@@ -16,7 +17,7 @@ const upload = require("../middlewares/mutler.js");
 const router = express.Router();
 
 router.route("/register").post(upload.single("file"), register);
-router.route("/login").post(login);
+router.route("/login").post(login).get(getAllUsers;
 router.route("/logout").get(logout);
 router
   .route("/profile/update")
