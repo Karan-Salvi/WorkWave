@@ -12,11 +12,11 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const dotenv = require("dotenv");
-const connectDB = require("./utils/db.js");
-const userRoute = require("./routes/user.route.js");
-const companyRoute = require("./routes/company.route.js");
-const jobRoute = require("./routes/job.route.js");
-const applicationRoute = require("./routes/application.route.js");
+const connectDB = require("../utils/db.js");
+const userRoute = require("../routes/user.route.js");
+const companyRoute = require("../routes/company.route.js");
+const jobRoute = require("../routes/job.route.js");
+const applicationRoute = require("../routes/application.route.js");
 
 dotenv.config({});
 
