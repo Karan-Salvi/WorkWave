@@ -8,18 +8,6 @@ WorkWave is a job portal built using the MERN stack (MongoDB, Express, React, No
 - **Database:** MongoDB
 - **Authentication:** JWT (JSON Web Tokens)
 - **Hosting:** Deployed on Vercel
-- 
-## Features
-- **Job Seeker:**
-  - Register and log in to the platform
-  - Browse job listings
-  - Apply for jobs
-  - Create and manage resumes
-  - Save favorite jobs
-- **Employer:**
-  - Post new job listings
-  - View applicants for job openings
-  - Manage job listings
 
 <h2>Job Seeker Section</h2>
 
@@ -60,6 +48,54 @@ WorkWave is a job portal built using the MERN stack (MongoDB, Express, React, No
 
 
 <br/>
+
+
+<h2>Employer Section</h2>
+
+
+
+<br/>
+
+
+![Screenshot 2025-01-03 020703](https://github.com/user-attachments/assets/1e61cd45-0c74-45af-be54-275f3c1df43f)
+
+
+<br/>
+
+
+![Screenshot 2025-01-03 021438](https://github.com/user-attachments/assets/461547ce-47c4-42a4-87cb-3741ce7c243d)
+
+
+<br/>
+
+![Screenshot 2025-01-03 021458](https://github.com/user-attachments/assets/4fe4e89e-ab99-41c6-9190-269075f2d9c5)
+
+
+
+<br/>
+
+![Screenshot 2025-01-03 021732](https://github.com/user-attachments/assets/e9450f8b-05bd-43ac-89ab-142a72819888)
+
+<br/>
+
+![Screenshot 2025-01-03 021748](https://github.com/user-attachments/assets/6bde9226-e1d4-449c-a70f-76faf8825766)
+
+
+<br/>
+
+
+
+## Features
+- **Job Seeker:**
+  - Register and log in to the platform
+  - Browse job listings
+  - Apply for jobs
+  - Create and manage resumes
+  - Save favorite jobs
+- **Employer:**
+  - Post new job listings
+  - View applicants for job openings
+  - Manage job listings
 
 
 ## Setup Instructions
