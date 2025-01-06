@@ -2,12 +2,6 @@
 
 WorkWave is a job portal built using the MERN stack (MongoDB, Express, React, Node.js). It allows employers to post job openings and job seekers to apply for jobs. The platform aims to streamline the job application process by providing a user-friendly interface for both job seekers and employers.
 
-## Technologies Used
-- **Frontend:** React.js, React Router, Axios
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Authentication:** JWT (JSON Web Tokens)
-- **Hosting:** Deployed on Vercel
 
 <h2>Job Seeker Section</h2>
 
@@ -82,6 +76,20 @@ WorkWave is a job portal built using the MERN stack (MongoDB, Express, React, No
 
 
 <br/>
+
+
+
+
+
+## Technologies Used
+- **Frontend:** React.js, React Router, Axios
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JWT (JSON Web Tokens)
+- **Hosting:** Deployed on Vercel
+
+
+
 
 
 
