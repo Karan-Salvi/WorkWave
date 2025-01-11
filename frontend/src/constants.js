@@ -1,1 +1,1 @@
-export const BACKEND_URI = "https://workwave-backend.vercel.app";
+export const BACKEND_URI = "https://apiworkwave.vercel.app";
