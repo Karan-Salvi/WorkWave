@@ -107,7 +107,10 @@ const login = async (req, res) => {
     return res
       .status(200)
       .cookie("token", token, {
-        maxAge: 1 * 24 * 60 * 60 * 1000,
+        sameSite: "None",
+        secure: process.env.NODE_ENV === "production",
+        httpOnly: true,
+        expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
       })
       .json({
         message: `Welcome back ${user.fullname}`,
